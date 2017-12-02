@@ -1,4 +1,5 @@
 import { NgModule } from '@angular/core';
+import { BrowserModule } from '@angular/platform-browser';
 import { Routes, RouterModule } from '@angular/router';
 
 import { CallbackComponent } from './callback/callback.component';
@@ -27,7 +28,7 @@ export const ROUTES: Routes = [
     HomeComponent,
     CallbackComponent
   ],
-  imports: [RouterModule.forRoot(ROUTES)],
+  imports: [BrowserModule,RouterModule.forRoot(ROUTES)],
   exports: [RouterModule]
 })
 export class AppRoutingModule {}
