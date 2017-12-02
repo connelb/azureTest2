@@ -4,6 +4,9 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 
+import { AuthService } from './auth/auth.service';
+//import { CallbackComponent } from './callback/callback.component';
+
 @NgModule({
   declarations: [
     AppComponent
@@ -12,7 +15,7 @@ import { AppComponent } from './app.component';
     BrowserModule,
     AppRoutingModule
   ],
-  providers: [],
+  providers: [AuthService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
