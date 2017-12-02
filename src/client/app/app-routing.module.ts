@@ -23,6 +23,10 @@ export const ROUTES: Routes = [
 ];
 
 @NgModule({
+  declarations: [
+    HomeComponent,
+    CallbackComponent
+  ],
   imports: [RouterModule.forRoot(ROUTES)],
   exports: [RouterModule]
 })
